@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ics maker</title>
+    <script src="icsscript.js" defer></script>
 </head>
 <body>
     <h2>ICS file maker</h2>
     
+    <div id="events-container">
     <div class="event-block">
         <label>Title: <input type="text" class="title" placeholder="Event Title"> </label><br>
         <label>Date: <input type="date" class="date"></label><br>
@@ -15,10 +17,10 @@
         <label> Duration (minutes): <input type="number" class="duration" value="60"></label><br>
         <label>Description: <input type="text" class="description" placeholder="optional"></label><br>
     </div>
+    </div>
 
 
     <button id="add-event">Add another event</button>
     <button id="generate-ics">Generate ICS file</button>
-    
 </body>
 </html>
