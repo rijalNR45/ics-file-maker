@@ -1,0 +1,8 @@
+BEGIN:VEVENT
+UID:some-unique-id
+DTSTAMP:current_utc_time
+DTSTART:event_start_time_utc
+DTEND:event_end_time_utc
+SUMMARY:event_title
+DESCRIPTION:event_details
+END:VEVENT
