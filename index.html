@@ -1,26 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ics maker</title>
-    <script src="testscript.js" defer></script>
+  <meta charset="UTF-8">
+  <title>Multi-Event ICS Generator (Local Time)</title>
+  <style>
+    .event-block {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+    button {
+      margin-top: 5px;
+    }
+  </style>
 </head>
 <body>
-    <h2>ICS file maker</h2>
-    
-    <div id="events-container">
+  <h1>.ics file generator</h1>
+
+  <div id="events-container">
     <div class="event-block">
-        <label>Title: <input type="text" class="title" placeholder="Event Title"> </label><br>
-        <label>Date: <input type="date" class="date"></label><br>
-        <label>Time: <input type="time" class="time"></label><br>
-        <label> Duration (minutes): <input type="number" class="duration" value="60"></label><br>
-        <label>Description: <input type="text" class="description" placeholder="optional"></label><br>
+      <label>Title: <input type="text" class="title" placeholder="Event Title"></label><br>
+      <label>Date: <input type="date" class="date"></label><br>
+      <label>Time: <input type="time" class="time"></label><br>
+      <label>Duration (minutes): <input type="number" class="duration" value="60"></label><br>
+      <label>Description: <input type="text" class="description" placeholder="Optional"></label><br>
+      <label>Location: <input type="text" class="location" placeholder="Optional"></label><br>
     </div>
-    </div>
+  </div>
 
+  <button id="add-event">Add Another Event</button>
+  <button id="generate-ics">Generate ICS File</button>
 
-    <button id="add-event">Add another event</button>
-    <button id="generate-ics">Generate ICS file</button>
+  <!-- Link JS file (important: use defer) -->
+  <script src="script.js" defer></script>
 </body>
 </html>
